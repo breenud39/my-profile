@@ -8,6 +8,7 @@ A webpage that shows some of my accomplishments as a full stack developer
 * CSS
 
 ## Website
+https://breenud39.github.io/my-profile/
 
 ## Contribution
 Made by Evangelos Damianos
