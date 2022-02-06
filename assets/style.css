@@ -55,26 +55,27 @@ header nav ul li
 {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   align-items: center;
   list-style: none;
   display: inline;
+  justify-content: space-between;
+  padding: 10px;
 }
 
 header nav ul li a
 {
-  padding: 10px 15px;
   font-weight: lighter;
   font-size: 1.55vw;
   color: rgb(250,250,250);
-  border-bottom: 1px solid rgb(250,250,250);
+  border-bottom: 5px solid rgb(250,250,250);
 }
 
 header nav ul li a:hover
 {
   background: rgb(255,255,255);
   color: rgb(50,50,50);
-  border-radius: 15px;
+  border-radius: 5px;
+  padding: 5px;
   text-shadow: none;
 }
 
@@ -99,28 +100,52 @@ header nav ul li a:hover
 .about-me
 {
   display: flex;
-  padding-left: 15%;
 }
 
-.about-me-div
+.article p
 {
-  font-size: 25px;
-  padding-right: 20px;
-  top: 0;
-}
-
-.about-me-info
-{
-  border-left: 5px solid rgb(150,150,150);
-  padding-left: 30px;
+  font-size: 20px;
+  color: rgb(150,150,150);
 }
 
 /*About Me End*/
 /*Work Start*/
+.work-examples
+{
+  display: flex;
+}
+.work-button-big
+{
+  display: block;
+  width: 100%;
+  border: 5px solid rgb(150,150,150);
+  background-image: url("");
+  background-size: cover;
+}
 
+.content h3
+{
+  background-color: rgb(200,200,200);
+}
+
+.work-button
+{
+  width: 50%;
+  border: 5px solid rgb(150,150,150);
+}
 /*Work End*/
 /*Contact Me Start*/
+.contact-me
+{
+  display: inline;
+  display: flex;
+  list-style: none;
+}
 
+.contact-info
+{
+  display: inline;
+}
 /*Contact Me End*/
 /*Resume Start*/
 
@@ -128,4 +153,78 @@ header nav ul li a:hover
 /*Footer Start*/
 
 /*Footer End*/
+/*For All*/
+.title-position
+{
+  padding-right: 20px;
+  padding-left: 15%;
+}
+
+.section-title
+{
+  top: 0;
+}
+
+.content
+{
+  border-left: 5px solid rgb(150,150,150);
+  padding-left: 30px;
+  padding-right: 20px;
+}
+/*For All End*/
 /*Media Queries*/
+@media screen and (max-width: 980px)
+{
+    header
+    {
+        padding-bottom: 0;
+        justify-content: center;
+        position: relative;
+    }
+    header h1
+    {
+        width: 100%;
+        text-align: center;
+    }
+    header nav ul
+    {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+    }
+    header nav ul li a
+    {
+        font-size: 20px;
+    }
+    footer h2, footer div
+    {
+        text-align: center;
+        width: 100%;
+    }
+    .about-me, .aboutme-info
+    {
+        width: 100%;
+    }
+
+    .title-position
+    {
+        width: 80%;
+        border-bottom: 5px solid rgb(150,150,150);
+        border-width: 100%;
+        text-align: center;
+        padding: 0;
+    }
+    .trainer
+    {
+        flex: 0 70%;
+    }
+    .content
+    {
+      padding: 25px 0 0 0;
+      border-left: none;
+    }
+    .move-top
+    {
+      display: block;
+    }
+}
